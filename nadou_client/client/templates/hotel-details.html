@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Google Fonts Includes -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- Favi icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/favicon.ico">
+    <!-- bootstrap v3.3.6 css -->
+    <link rel="stylesheet" href="../static/css/assets/bootstrap.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="../static/css/assets/animate.css">
+    <!-- Button Hover animate css -->
+    <link rel="stylesheet" href="../static/css/assets/hover-min.css">
+    <!-- jquery-ui.min css -->
+    <link rel="stylesheet" href="../static/css/assets/jquery-ui.min.css">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="../static/css/assets/meanmenu.min.css">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="../static/css/assets/owl.carousel.min.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="../static/css/assets/slick.css">
+    <!-- chosen.min-->
+    <link rel="stylesheet" href="../static/css/assets/jquery-customselect.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="../static/css/assets/font-awesome.min.css">
+    <!-- magnific Css -->
+    <link rel="stylesheet" href="../static/css/assets/magnific-popup.css">
+    <!-- Preloader css -->
+    <link rel="stylesheet" href="../static/css/assets/preloader.css">
+    <!-- custome css -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="stylesheet" href="../static/css/master.css">
+    <!-- modernizr css -->
+    <script src="../static/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- 引入外部js文件 -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/room/room_data.js"></script>
+    <!-- 导入自定义js文件 -->
+    <script src="../static/js/room/room.js"></script>
+
+
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=MLGOXx1mB76H4u8PSeNf3MgVFmFL8vg7"></script>
+
+    <script></script>
+</head>
+
+<body>
+
+
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- header area start here -->
+    <header>
+        <!-- 这里还有一个顶部,直接用首页的 -->
+
+        <div class="main_nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-xs-12 tap-v-responsive">
+
+                    </div>
+                    <div class="col-md-10">
+                        <nav>
+
+                        </nav>
+                    </div>
+                    <!-- main menu end here -->
+                </div>
+            </div>
+        </div>
+        <!-- header-bottom area end here -->
+    </header>
+    <!-- header area end here -->
+
+    <!-- blog breadcrumb version one strat here -->
+    <section class="breadcrumb-blog-version-one">
+        <div class="single-bredcurms" style="background-image:url('images/bercums/Hotels-Version-02.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog breadcrumb version one end here -->
+
+    <section class="section-paddings single-package-area" id="hotel_details">
+        <div class="container">
+            <div class="row">
+                <!-- single package tab with details -->
+                <div class="col-md-8 col-sm-12">
+                    <!-- tab menu strat -->
+
+                    <div class="package-tab-menu">
+                        <ul class="package-tab-menu nav nav-tabs" id="myTab2" role="tablist">
+                            <li role="presentation"><a href="#description" class="active" aria-controls="description" role="tab" data-toggle="tab">详情</a></li>
+                            <li role="presentation"><a href="#itinerary" aria-controls="itinerary" role="tab" data-toggle="tab">位置</a></li>
+                            <li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">须知</a></li>
+                            <li role="presentation"><a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">评价</a></li>
+                        </ul>
+                    </div>
+                    <!-- tab menu end -->
+
+                    <!-- tab content start -->
+                    <div class="row">
+                        <!-- tabs content -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade show active in" id="description">
+                                <div class="row">
+                                    <!-- left content -->
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="tour-description">
+                                            <!-- 酒店title -->
+                                            <div style="margin-bottom: 8px;">
+                                                <div class="roombox">
+                                                    <!-- 使用js加载对应房间信息 -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- left-content -->
+
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade" id="itinerary">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="tour-description">
+                                            <h4>Tour Description</h4>
+                                            <!-- 百度地图 -->
+
+                                            <div id="mappp" style="width: 500px;height: 500px"></div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane fade" id="map">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="tour-description">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- video tab content start -->
+                            <div role="tabpanel" class="tab-pane fade" id="video">
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-sm-12">
+                                        <div class="tour-description">
+                                            <h4>Video</h4>
+                                            <!-- Video -->
+                                            <div class="tab-video-area video-bg">
+                                                <div class="video-play-btn">
+                                                    <a href="https://www.youtube.com/watch?v=UQneDljrWm0" class="video_iframe"><span><i class="fa fa-play"></i></span></a>
+                                                </div>
+                                            </div>
+                                            <!-- Video -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- video tab content end -->
+
+                            <!-- video tab content start -->
+                            <div role="tabpanel" class="tab-pane fade" id="reviews">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="tour-description">
+                                            <div class="comment-list-items">
+                                                <div class="comment-list-wrapper">
+                                                    <div class="comment-list">
+                                                        <div class="commnet_img">
+                                                            <img src="images/blog/comments1.jpg" alt="member img" class="img-fluid">
+                                                        </div>
+                                                        <div class="comment-text">
+                                                            <div class="author_info">
+                                                                <div class="author_name">
+                                                                    <a href="" class="">Adam Smith</a>
+                                                                    <span>20 July 2019 at 10.45 AM</span>
+                                                                </div>
+                                                                <div class="reply-comment">
+                                                                    <a href="#" title=""> <i class="flaticon-reply-arrow"></i> Reply</a>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="review_rating d-flex">
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                            </ul>
+                                                            <p>You need to be sure there isn't anything embarrassing hidden in the repeat predefined chunks as nessing hidden in the repeat predefined chunks as necessary, making this the first true generator
+                                                                on the Internet.</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="comment-list reply_comment_text">
+                                                        <div class="commnet_img">
+                                                            <img src="images/blog/comments2.jpg" alt="member img" class="img-fluid">
+                                                        </div>
+                                                        <div class="comment-text">
+                                                            <div class="author_info">
+                                                                <div class="author_name">
+                                                                    <a href="" class="">Jonson Park</a>
+                                                                    <span>20 July 2019 at 10.45 AM</span>
+                                                                </div>
+                                                                <div class="reply-comment">
+                                                                    <a href="#" title=""> <i class="flaticon-reply-arrow"></i> Reply</a>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="review_rating d-flex">
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                            </ul>
+                                                            <p>You need to be sure there isn't anything embarrassing hidden in the repe essary, making this the first true generator on the Internet.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-list-wrapper">
+                                                    <div class="comment-list">
+                                                        <div class="commnet_img">
+                                                            <img src="images/blog/comments1.jpg" alt="member img" class="img-fluid">
+                                                        </div>
+                                                        <div class="comment-text">
+                                                            <div class="author_info">
+                                                                <div class="author_name">
+                                                                    <a href="" class="">Jonathon Smith</a>
+                                                                    <span>20 July 2019 at 10.45 AM</span>
+                                                                </div>
+                                                                <div class="reply-comment">
+                                                                    <a href="#" title=""> <i class="flaticon-reply-arrow"></i> Reply</a>
+                                                                </div>
+                                                            </div>
+                                                            <ul class="review_rating d-flex">
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                                <li><i class="fa fa-star"></i></li>
+                                                            </ul>
+                                                            <p>You need to be sure there isn't anything embarrassing hidden in the repeat predefined chunks as nessing hidden in the repeat predefined chunks as necessary, making this the first true generator
+                                                                on the Internet.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- video tab content end -->
+                        </div>
+                        <!-- tabs content-->
+                    </div>
+                    <!-- tab content end -->
+                </div>
+                <!-- single package tab with details -->
+
+                <!-- booking form start here -->
+                <div class="col-md-4 col-sm-12">
+                    <aside>
+                        <div class="booking-form">
+                            <div class="booking-title">
+                                <h2>Book This Tour</h2>
+                                <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sedpr do eiusmod tempor incididunt ut.</p>
+                            </div>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="confirm_email" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" id="number" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="booking-date" placeholder="dd-mm-yy *">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="ticket" placeholder="Number Of Tickets *">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="messgae" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group form_btn">
+                                    <button type="submit" class="booking-confirm hvr-shutter-out-horizontal">Book Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </aside>
+                    <!-- adverestment start here-->
+
+                    <div class="adding-form">
+                        <div class="addfor-bg">
+                            <div class="add-content">
+                                <h3>Get A Question!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectet ur adipiscing elit, sedpr do eiusmod tempor incididunt ut.</p>
+                                <ul class="contact-for-add">
+                                    <li><img src="images/icon/phone.png" alt="">+123-456-7890</li>
+                                    <li><img src="images/icon/gmail.png" alt="">info@yourcompany.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- adverestment start here-->
+                </div>
+                <!-- booking form end here -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script type="text/javascript">
+        var map = new BMapGL.Map("mappp");
+        // 创建地图实例 
+        var point = new BMapGL.Point(104.093925, 30.654164);
+        // 创建点坐标 
+        map.centerAndZoom(point, 15);
+        // 初始化地图，设置中心点坐标和地图级别 
+
+
+        map.enableScrollWheelZoom(true);
+    </script>
+
+
+
+
+
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <!-- footer left -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-footer">
+                        <div class="footer-title">
+                            <h3>
+                                <a href="#"><img src="../static/images/logo.png" alt=""></a>
+                            </h3>
+                        </div>
+                        <div class="footer-left">
+                            <div class="footer-logo">
+                                <p>Lorem ipsum dolor sit amet conset ctetur adipiscin elit Etiam at ipsum at ligula vestibulum sodales.</p>
+                            </div>
+                            <ul class="footer-contact">
+                                <li><img class="map" src="images/icon/map.png" alt="">Seventh Avenue New York</li>
+                                <li><img class="map" src="images/icon/phone.png" alt="">+123-456-7890</li>
+                                <li><img class="map" src="images/icon/gmail.png" alt="">info@yourcompany.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer left -->
+
+                <!-- footer destination -->
+                <div class="col-md-2 col-sm-6">
+                    <div class="single-footer">
+                        <div class="footer-title">
+                            <h3>Quick Link</h3>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><a href="" title="">Home</a></li>
+                            <li><a href="" title="">Package List</a></li>
+                            <li><a href="" title="">Hotels</a></li>
+                            <li><a href="" title="">Flights</a></li>
+                            <li><a href="" title="">Blog</a></li>
+                            <li><a href="" title="">Pages</a></li>
+                            <li><a href="" title="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer destination -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-footer">
+                        <div class="single-recent-post">
+                            <div class="footer-title">
+                                <h3>Recent News</h3>
+                            </div>
+                            <ul class="recent-post">
+                                <li>
+                                    <a href="#">
+                                        <div class="post-thum">
+                                            <img src="images/blog/f4.jpg" alt="" class="img-rounded">
+                                        </div>
+                                        <div class="post-content">
+                                            <p>A Clean Website Gives More Experience To The Visitors.
+                                            </p>
+                                            <span>12 July, 2019</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="post-thum">
+                                            <img src="images/blog/f5.jpg" alt="" class="img-rounded">
+                                        </div>
+                                        <div class="post-content">
+                                            <p>A Clean Website Gives More Experience To The Visitors.
+                                            </p>
+                                            <span>12 July, 2019</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="post-thum">
+                                            <img src="../static/images/blog/f6.jpg" alt="" class="img-rounded">
+                                        </div>
+                                        <div class="post-content">
+                                            <p>A Clean Website Gives More Experience To The Visitors.
+                                            </p>
+                                            <span>12 July, 2019</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer latest news -->
+
+                <!-- footer contact -->
+                <div class="col-md-3 col-sm-6 f-phone-responsive">
+                    <div class="single-footer">
+                        <div class="footer-title">
+                            <h3>Quick Contact</h3>
+                        </div>
+                        <div class="footer-contact-form">
+                            <form action="#">
+                                <ul class="footer-form-element">
+                                    <li>
+                                        <input type="text" name="email" id="email" placeholder="" value="Email Address" onblur="if(this.value==''){this.value='Email Address'}" onfocus="if(this.value=='Email Address'){this.value=''}">
+                                    </li>
+                                    <li class="text_area">
+                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <button type="submit">Send</button>
+                                    </li>
+                                    <li>
+
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="footer-social-media">
+                            <div class="social-footer-title">
+                                <h3>Follow Us</h3>
+                            </div>
+                            <ul class="footer-social-link">
+                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer contact -->
+            </div>
+        </div>
+        <div class="footer_bottom_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <div class="copy_right_wrapper">
+                            <div class="copyright">
+                                <p>Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                            </div>
+                            <ul class="payicon pull-right">
+                                <li>We Accept : </li>
+                                <li>
+                                    <a href="" title=""><img src="../static/images/payicon01.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="" title=""><img src="../static/images/payicon02.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="" title=""><img src="../static/images/payicon03.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="" title=""><img src="../static/images/payicon04.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="" title=""><img src="../static/images/payicon05.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="" title=""><img src="../static/images/payicon06.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <div class="to-top pos-rtive">
+        <a href="#"><i class = "fa fa-angle-up"></i></a>
+    </div>
+
+    <!-- Scroll to top-->
+    <!-- ============================
+            JavaScript Files
+    ============================= -->
+
+    <!-- jquery latest version -->
+    <script src="../static/js/vendor/jquery-3.2.0.min.js"></script>
+    <script src="../static/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <!-- slick js -->
+    <script src="../static/js/slick.min.js"></script>
+    <!-- meanmenu js -->
+    <script src="../static/js/jquery.meanmenu.min.js"></script>
+    <!-- jquery-ui js -->
+    <script src="../static/js/jquery-ui.min.js"></script>
+    <!-- wow js -->
+    <script src="../static/js/wow.min.js"></script>
+    <!-- counter js -->
+    <script src="../static/js/jquery.counterup.min.js"></script>
+    <!-- Countdown js -->
+    <script src="../static/js/jquery.countdown.min.js"></script>
+    <!-- waypoints js -->
+    <script src="../static/js/jquery.waypoints.min.js"></script>
+    <!-- Isotope js -->
+    <script src="../static/js/isotope.pkgd.min.js"></script>
+    <!-- magnific js -->
+    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <!-- Image loaded js -->
+    <script src="../static/js/imagesloaded.pkgd.min.js"></script>
+    <!-- chossen js -->
+    <script src="../static/js/chosen.jquery.min.js"></script>
+    <!-- Jquery plugin -->
+    <script src="../static/js/plugins.js"></script>
+    <!-- select2 js plugin -->
+    <script src="../static/js/select2.min.js"></script>
+    <script src="../static/js/colors.js"></script>
+    <!-- Jquery plugin -->
+    <script src="../static/js/jquery-customselect.js"></script>
+    <!-- google map api -->
+    <!-- <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyCIW0B_E3g-Yg533xy3yF0WHThi-mFvSNQ "></script> -->
+    <!-- map js -->
+    <!-- <script src="js/google-map.js"></script> -->
+    <!-- main js -->
+    <script src="../static/js/custom.js"></script>
+
+
+
+
+</body>
+
+</html>
